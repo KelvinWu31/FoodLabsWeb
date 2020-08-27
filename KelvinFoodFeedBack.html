@@ -1,0 +1,99 @@
+<!DOCTYPE> 
+<html> 
+<head> 
+
+	<Title> Food Labs INC Feedback page </title>
+
+</head> 
+<body>
+		<link rel="stylesheet" href="style.css">
+		<h1><STRONG>Food Labs INC. FeedBack Page</STRONG></h1>
+
+		<div>
+			<video class ='center1' width="735" controls>
+ 			<source src="mov_bbb.mp4" type="video/mp4">
+  			<source src="mov_bbb.ogg" type="video/ogg">
+  			Your browser does not support HTML5 video.
+			</video>
+
+		<p>
+		Day in the life of 
+		<a href="https://www.youtube.com/watch?v=2bMA64jeqZg">our Restaurant Staff.</a>.
+		</p>
+		</div>
+
+		<h2>We would like to thank you for choosing our restaurant.</h2>
+		<div>
+			<p>Please feel free to fill out the questionare below for the maximum feedback.</p>
+
+		<head>
+
+		<script>
+		function allowDrop(ev) {
+  		ev.preventDefault();
+		}
+
+		function drag(ev) {
+  		ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+  		ev.preventDefault();
+  		var data = ev.dataTransfer.getData("text");
+  		ev.target.appendChild(document.getElementById(data));
+		}
+		</script>
+		</head>
+
+
+		<p>Please Drag and Drop the waiter that attended your meal for the meal:</p>
+
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<br>
+		<img id="drag1" src="https://envato-shoebox-0.imgix.net/732a/6a0a-dd8e-4f2b-922a-e123c68a130a/4H1A7499.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=6bf4ad1c91526e049e097a4a3ae139a0" draggable="true" ondragstart="drag(event)" width="200" height="100">
+
+		<br>
+		<img id="drag1" src="https://tallypress.com/wp-content/uploads/2018/10/server.jpg" draggable="true" ondragstart="drag(event)" width="200" height="100">
+		</div>
+
+		<div>
+		<form>
+		<p> How did the staff treat you?</p>
+		<select name="wgtmsr" id="wgtmsr">
+		<option value="Poor">Poorly</option>
+		<option value="Fair ">Fair</option>
+		<option value="Very Well ">Very Well</option>
+		<option value="Exceptionally Well">Exceptionally Well </option>
+		</select>
+
+		<p> How was the food?</p>
+		<select name="wgtmsr" id="wgtmsr">
+		<option value="Poor">Poorly</option>
+		<option value="Fair ">Fair</option>
+		<option value="Very Well ">Very Well</option>
+		<option value="Exceptionally Well">Exceptionally Well </option>
+		</select>
+
+		<p> How was the Restaurant Environment?</p>
+		<select name="wgtmsr" id="wgtmsr">
+		<option value="Poor">Poorly</option>
+		<option value="Fair ">Fair</option>
+		<option value="Very Well ">Very Well</option>
+		<option value="Exceptionally Well">Exceptionally Well </option>
+		</select>
+
+		<p>Comments: </p>
+		<p><textarea rows="10" cols="30" name="comments">Your comments</textarea></p>
+		
+		<p></p>
+	
+		<p><input type="submit"></p>
+
+		</form>
+		</div>
+		
+
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Food Survey </title>
+</head>
+	
+<body>
+	<h1> Food Survey of Lab Foods INC.</h1>
+	<link rel="stylesheet" href="style.css">
+
+	<p><strong>We at Lab Foods are surveying locals about adding new menu items for each category. </strong></p> 
+	<p><strong>We will be adding the highest voted food and drink to each category. </strong></p>
+	<p><strong>Please fill out the survey below for maximum feedback. </strong></p>
+
+	
+	<div>
+	<h2> Breakfast Menu Options </h2>
+
+	<p> Please select a new breakfast beverage to add to menu: </p>
+	<select name="wgtmsr" id="wgtmsr">
+	<option value="Water">Water</option>
+	<option value="Coffee ">Coffee</option>
+	<option value="Orange Juice ">Orange Juice</option>
+	<option value="Milk "> Milk </option>
+	</select>
+
+	<form action="somescript.php" method="post">
+	<p> Please select a new breakfast menu item and Press <strong>Submit </strong> </p>
+	<p> <input type="radio" name="favoriteBreakfast" value="Milk and Cereal"> Milk and Cereal </p>
+	<p> <input type="radio" name="favoriteBreakfast" value="Bacon, Egg and Cheese"> Bacon, Egg and Cheese </p>
+	<p> <input type="radio" name="favoriteBreakfast" value="Pancakes with Maple Syrup"> Pancakes with Maple Syrup</p>
+	<p> <input type="radio" name="favoriteBreakfast" value="Everything Bagel with Cream Cheese"> Everything Bagel with Cream Cheese </p>
+
+	<p><input type="submit"></p>
+	</form>
+	</div>
+
+	<div>
+	<h2> Lunch Menu Options</h2> 
+
+	<p>Please select two Lunch beverages to add to menu: </p>
+	<select name="wgtmsr" id="wgtmsr" multiple="">
+	<p>Hold down the Ctrl (windows)/Command (Mac) button to select two options.</p>
+	<option value="Smoothies">Smoothies</option>
+	<option value="Energy Drink ">Energy Drink </option>
+	<option value="Soda ">Soda </option>
+	<option value="Tea "> Tea </option>
+	</select>
+
+	<form action="somescript.php" method="post">
+	<p> Please select a new lunch and Press <strong>Submit </strong> </p>
+	<p> <input type="radio" name="favoriteLunch" value="Chicken over Rice"> Chicken over Rice </p>
+	<p> <input type="radio" name="favoriteLunch" value="Turkey Tacos"> Turkey Tacos </p>
+	<p> <input type="radio" name="favoriteLunch" value="Hamburger"> Hamburger</p>
+	<p> <input type="radio" name="favoriteLunch" value="Caesar's Salads"> Caesar's Salads </p>
+
+	<p><input type="submit"></p>
+	</form>
+	</div>	
+
+	<div>
+	<h2> Dinner Menu Options </h2>
+
+	<p> Please select a new Dinner beverage to add to menu:</p>
+	<select name="wgtmsr" id="wgtmsr">
+	<option value="Red Wine">Red Wine</option>
+	<option value="White Wine ">White Wine</option>
+	<option value= "Champagne ">Champagne</option>
+	<option value="Sparkling Water	"> Sparkling Water </option>
+	</select>
+
+	<form action="somescript.php" method="post">
+	<p> Please select a new dinner item and Press <strong>Submit 
+	</strong> </p>
+	<p> <input type="radio" name="favoriteDinner" value="Garlic Butter Steak"> Garlic Butter Steak</p>
+	<p> <input type="radio" name="favoriteDinner" value="Shrimp Fettuccine Alfredo"> Shrimp Fettuccine Alfredo </p>
+	<p> <input type="radio" name="favoriteDinner" value="Garlic Butter Baked Salmon"> Garlic Butter Salmon</p>
+	<p> <input type="radio" name="favoriteDinner" value="Roasted Cauliflower Pasta"> Roasted Cauliflower Pasta </p>
+
+	<p><input type="submit"></p>
+	</form>
+	</div>
+
+	
+
+
+
+</body>
+</html>

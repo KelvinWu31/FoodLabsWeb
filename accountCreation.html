@@ -1,0 +1,94 @@
+<!DOCTYPE> 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account SignUp</title>
+
+</head>
+	<link rel="stylesheet" href="style.css">
+	<h1><STRONG>Food Labs INC. Account Signup</STRONG></h1>
+	<script>
+	function autotab(current,to){
+	    if (current.getAttribute && current.value.length==current.getAttribute("maxlength")) 
+	    {
+	        to.focus() 
+	    }
+	}
+	 function checkPassword(form) { 
+                password1 = form.password1.value; 
+                password2 = form.password2.value; 
+  
+                if (password1 == '') 
+                    alert ("Please enter Password");   
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                else if (password1 != password2) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+                else{ 
+                    alert("Account SignUp Successful: Welcome to FoodLabs Inc.!") 
+                    return true; 
+                } 
+            } 
+
+    function myFunction() {
+	document.getElementById("bGround").style.backgroundColor = "gray";
+    }
+    function changeFunction () {
+    document.getElementById("darkMode");
+    if (y.innerHTML == "Dark Mode not implemented."){
+    	y.innerHTML ="Dark Mode Implemented."
+    }
+    else {
+    	y.innerHTML= "Dark Mode not implemented.";
+    }
+    } // end of changeFunction 
+
+	</script>
+	<br/>
+	
+	<body>
+		<div style="text-align: center; border: 1px solid">
+			Click this button to set Dark Mode.
+		<button type="button" onclick="myFunction()">Dark Mode</button>
+
+		<div id="darkMode">Dark Mode not implemented.</div>
+		<button onclick="changeFunction()">Click Me</button>
+		</div>
+
+	<p></p>
+	<div class="form" id="bGround">
+	<p>Enter the membership card number given by the restaurant: </p>
+	<form name="formName">
+	<input type="text" maxlength="5" oninput="autotab(this, document.formName.inputName)" > <input type="text" maxlength="7" name="inputName">
+			<body>
+	        <form onSubmit = "return checkPassword(this)"> 
+	        <table border = 1 align = "center"> 
+	            <tr> 
+	                <td>Username:</td> 
+	                <td><input type = text name = name size = 25</td> 
+	            </tr> 
+	            <tr> 
+	                <td>Password:</td> 
+	                <td><input type = password name = password1 size = 25</td> 
+	            </tr> 
+	            <tr> 
+	                <td>Confirm Password:</td> 
+	                <td><input type = password name = password2 size = 25></td> 
+	            </tr> 
+	            <tr> 
+	                <td colspan = 2 align = right> 
+	                <input type = submit value = "Submit"></td> 
+	            </tr> 
+	        </table> 	
+
+	</form>
+
+	</body>	
+    </div>
+
+
+
+</body>
+</html>
